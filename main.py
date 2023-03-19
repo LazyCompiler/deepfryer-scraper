@@ -29,11 +29,11 @@ def get_messages_from_sqs(amount_of_messages=1):
     )
     if "Messages" in response:
         response_messages = response["Messages"]
-        # for message in response_messages:
-        #     sqs_client.delete_message(
-        #         QueueUrl=sqs_queue_url,
-        #         ReceiptHandle=message['ReceiptHandle']
-        #     )
+        for message in response_messages:
+            sqs_client.delete_message(
+                QueueUrl=sqs_queue_url,
+                ReceiptHandle=message['ReceiptHandle']
+            )
         return response_messages
     else:
         print("No messages in queue")
