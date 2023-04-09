@@ -1,0 +1,63 @@
+{
+  "vpc-provider:account=968553126320:filter.tag:aws:cloudformation:stack-name=DeepfryerCoreCdkStack:region=eu-central-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-07fb1f045a5e7bfda",
+    "vpcCidrBlock": "10.0.0.0/16",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "isolated",
+        "type": "Isolated",
+        "subnets": [
+          {
+            "subnetId": "subnet-0a18a39e8342f9aa6",
+            "cidr": "10.0.2.0/24",
+            "availabilityZone": "eu-central-1a",
+            "routeTableId": "rtb-0e2fcfa003fbcb703"
+          },
+          {
+            "subnetId": "subnet-055d9022f453f46ee",
+            "cidr": "10.0.3.0/24",
+            "availabilityZone": "eu-central-1b",
+            "routeTableId": "rtb-03527e3b781bfdb16"
+          }
+        ]
+      },
+      {
+        "name": "public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-03301fb51870e5a11",
+            "cidr": "10.0.0.0/24",
+            "availabilityZone": "eu-central-1a",
+            "routeTableId": "rtb-0cef48e6deffe0e78"
+          },
+          {
+            "subnetId": "subnet-07833855c73f3d5fb",
+            "cidr": "10.0.1.0/24",
+            "availabilityZone": "eu-central-1b",
+            "routeTableId": "rtb-0b2e5ba6140e3e28a"
+          }
+        ]
+      },
+      {
+        "name": "private",
+        "type": "Private",
+        "subnets": [
+          {
+            "subnetId": "subnet-08281870c7075b94a",
+            "cidr": "10.0.4.0/24",
+            "availabilityZone": "eu-central-1a",
+            "routeTableId": "rtb-0f89bb66494f042b3"
+          },
+          {
+            "subnetId": "subnet-01a58c564ffd68d85",
+            "cidr": "10.0.5.0/24",
+            "availabilityZone": "eu-central-1b",
+            "routeTableId": "rtb-0f5c147f4698402a1"
+          }
+        ]
+      }
+    ]
+  }
+}

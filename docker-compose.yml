@@ -1,0 +1,6 @@
+version: '3'
+services:
+  app:
+    image: deep-fryer-scraper
+    volumes:
+    - $HOME/.aws:/root/.aws
