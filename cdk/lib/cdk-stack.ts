@@ -67,7 +67,7 @@ export class CdkStack extends cdk.Stack {
         scheduledFargateTaskImageOptions: {
           logDriver: ecs.LogDrivers.awsLogs({
             streamPrefix: id,
-            logRetention: logs.RetentionDays.ONE_YEAR,
+            logRetention: logs.RetentionDays.THREE_MONTHS,
           }),
           image: image,
           environment: {
