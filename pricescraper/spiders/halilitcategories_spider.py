@@ -9,7 +9,7 @@ import scrapy
 def _parse_item(item_element):
     product_id = item_element.attrib["id"].split("_")[-1]
     try:
-        product_name_text = item_element.css("h3.title_with_brand::text").get().strip()
+        product_name_text = item_element.css(".title_with_brand::text").get().strip()
 
         origin_price_text = item_element.xpath(
             './/span[contains(@class, "items_show_origin_price_text")]/following-sibling::text()'
